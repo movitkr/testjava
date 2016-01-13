@@ -1,0 +1,13 @@
+package jdbc;
+
+public class CommitnRoll {
+	
+	public static final String url= "com.mysql.jdbc.Driver";
+	public static final String DB_URL = "jdbc:mysql://localhost/mov";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

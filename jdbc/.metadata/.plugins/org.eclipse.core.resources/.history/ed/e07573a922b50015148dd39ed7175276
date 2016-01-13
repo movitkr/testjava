@@ -1,0 +1,16 @@
+package json1;
+
+import javax.json.JsonObject;
+import javax.json.JsonValue;
+
+public class Json {
+	public static void main(String[] args) {
+		JsonObject obj= javax.json.Json.createObjectBuilder()
+				.add("name","movit").build();
+		JsonValue fn=obj.get("name");
+		String mv=fn.toString();
+		System.out.println(mv);
+		
+	}
+
+}
