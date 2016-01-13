@@ -1,0 +1,98 @@
+package jdbc;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Properties;
+import java.util.Scanner;
+ 
+public class papstmt {
+	
+	public static Properties loadProperties() throws IOException {
+		Properties prop= new Properties();
+		InputStream in = new FileInputStream("/home/movit/movit/testjava/jdbc/db.properties");
+		prop.load(in);
+		in.close();
+		return prop;
+	}
+	
+	/* static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	   static final String DB_URL = "jdbc:mysql://localhost/mov";
+
+	   //  Database credentials
+	   static final String USER = "root";
+	   static final String PASS = "root"; */
+	
+	
+ 
+    public static void main(String a[]){
+         
+        Connection conn = null;
+        PreparedStatement prSt = null;
+        try {
+        	
+        	
+        	
+           Properties prop;
+		
+			prop = loadProperties();
+		 
+           String DRIVER_CLASS = prop.getProperty("DB_DRIVER_CLASS");
+           String DB_URL = prop.getProperty("DB_URL");
+           String USER = prop.getProperty("DB_USERNAME");
+           String PASS = prop.getProperty("DB_PASSWORD");
+        	Class.forName(DRIVER_CLASS);
+
+            //STEP 3: Open a connection
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(DB_URL,USER, PASS);
+            
+            System.out.println("Connected database successfully...");
+            System.out.println("entr the values of name,dept sal");
+            Scanner s1= new Scanner(System.in);
+            String name=s1.next();
+            String dept=s1.next();
+            int sal= s1.nextInt();
+            
+            //STEP 4: Execute a query
+            //System.out.println("Creating table in given database...");
+            String query = "insert into emp(ename,dept,sal) values(?,?,?)";
+            
+            prSt = conn.prepareStatement(query);
+            prSt.setString(1, name);
+            prSt.setString(2, dept);
+            prSt.setInt(3, sal);
+            //count will give you how many records got updated
+            int count = prSt.executeUpdate();
+            System.out.println(count);
+            //Run the same query with different values
+           /* prSt.setString(1, "jonny");
+            prSt.setString(2, "cric");
+            prSt.setInt(3, 5000);
+            count = prSt.executeUpdate();
+            System.out.println(count); */
+            s1.close();
+        } 
+        catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally{
+            try{
+                if(prSt != null) prSt.close();
+                if(conn != null) conn.close();
+            } catch(Exception ex){}
+        }
+    }
+}
+
