@@ -45,16 +45,6 @@ public class Ctxserv extends HttpServlet {
 			out.print("VALUE:"+ctx.getInitParameter(str));
 			
 		}
-		/*Enumeration<String> headerNames = req.getHeaderNames();
-		while(headerNames.hasMoreElements()) {
-		  String headerName = (String)headerNames.nextElement();
-		  System.out.println(req.getHeader(headerName));
-		}
-		Enumeration<String> params = req.getParameterNames(); 
-		while(params.hasMoreElements()){
-		 String paramName = (String)params.nextElement();
-		 System.out.println("Attribute Name - "+paramName+", Value - "+req.getParameter(paramName));
-		}*/
 		out.println("<br>"+"-----*-----*-----*-----*------*------*------*-------");
 		out.close();
 	}
