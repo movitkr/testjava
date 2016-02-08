@@ -14,7 +14,7 @@ public class papstmt {
 	
 	public static Properties loadProperties() throws IOException {
 		Properties prop= new Properties();
-		InputStream in = new FileInputStream("/home/movit/movit/testjava/jdbc/properties/db.properties");
+		InputStream in = new FileInputStream("/home/movit/movit/jdbc/db.properties");
 		prop.load(in);
 		in.close();
 		return prop;

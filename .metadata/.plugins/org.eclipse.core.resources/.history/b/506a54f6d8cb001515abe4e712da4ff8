@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="a.css">
+<script type="text/javascript">
+ <!--
+            function sayHello() {
+               document.write("Hello World");
+            }
+         //-->
+</script>
+</head>
+<fixedheader><center>WELCOME</center></fixedheader>
+
+<fixedfooter><center>MOVOROCKERS.COM</center></fixedfooter>
+<body> 
+<nav>
+  <ul>
+    <li>
+       <input type="button" onclick="sayHello()" value="home"/>
+    </li>
+    <li>
+      <input type="submit" onclick="alert('profile')" value="profile">
+    </li>
+    <li>
+      <input type="submit" onclick="alert('webdesign')" value="webdesign">
+    </li>
+    <li>
+      <input type="submit" onclick="alert('bio')" value="bio">
+    </li>
+    <li>
+      <input type="submit" onclick="alert('contacts')" value="contacts">
+    </li>
+  </ul>
+</nav>
+
+<p><center> FROM_BODY</center></p>
+  
+</body>  
+
+
+</html>

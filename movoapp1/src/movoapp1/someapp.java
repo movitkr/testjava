@@ -1,6 +1,5 @@
 package movoapp1;
 
-import javax.swing.SortingFocusTraversalPolicy;
 
 public class someapp {
 	

@@ -1,0 +1,4 @@
+
+Jan 20, 2016 18:01:42.35 NEW SESSION
+Jan 20, 2016 18:01:42.35 
+Jan 20, 2016 18:01:42.35 (process:14435): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed

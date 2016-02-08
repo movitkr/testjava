@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "firstname": "Katerina",
+  "firstname": "movit",
   "languages": [
     {
       "lang": "en",
@@ -12,7 +12,7 @@
     }
   ],
   "job": {
-    "site": "www.javacodegeeks.com",
-    "name": "Java Code Geeks"
+    "site": "www.something.com",
+    "name": "Java Code"
   }
 }

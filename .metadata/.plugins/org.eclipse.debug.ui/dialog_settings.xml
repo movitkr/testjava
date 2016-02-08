@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
-<<<<<<< HEAD
-		<item value="293" key="DIALOG_WIDTH"/>
-		<item value="392" key="DIALOG_HEIGHT"/>
-=======
-		<item value="297" key="DIALOG_WIDTH"/>
-		<item value="394" key="DIALOG_HEIGHT"/>
->>>>>>> 6f485cb51813e638a2657273ca793e61d4b10bf1
+	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
+		<item value="800" key="DIALOG_WIDTH"/>
 		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="640" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_CONFIGURATION_DIALOG">
+		<item value="277" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="313" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
+		<item value="277" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="440" key="DIALOG_HEIGHT"/>
 	</section>
 </section>

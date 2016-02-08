@@ -3,6 +3,10 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
+import javax.json.JsonException;
+import javax.json.JsonObject;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,10 +21,10 @@ public class Rw {
 		}
 		 
 		//writing JSON
-		public static void jsonFileWrite(String fileName) throws JSONException
+		public static void jsonFileWrite(String fileName) throws JsonException
 		{
 		 
-		JSONObject allEmps=new JSONObject();
+		JsonObject allEmps=new JsonObject();
 		 
 		JSONArray empArray=new JSONArray();
 		JSONObject empObj;

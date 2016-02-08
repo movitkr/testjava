@@ -10,9 +10,8 @@ public class nwparser {
 	
 public static void main(String[] args) {
 	
-	FileInputStream json;
 	try {
-		json = new FileInputStream("/home/movit/movit/testjava/wrintgtojson/test.json");
+		FileInputStream json = new FileInputStream("/home/movit/movit/wrintgtojson/testjson.json");
 		JsonParser jr = Json.createParser(json);
 		while (jr.hasNext()) {
 		   JsonParser.Event event = jr.next();

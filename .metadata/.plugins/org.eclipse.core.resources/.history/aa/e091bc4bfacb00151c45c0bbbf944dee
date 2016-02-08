@@ -1,0 +1,15 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title>choose_ur_option</title> 
+<%@ include file="header.jsp" %>
+<%@ include file="footer.jsp" %>
+</head>  
+<body bgcolor="#58ACFA"> 
+
+<input type="submit" value="login" onclick="document.location.href ='login.html'"><br><br>
+<input type="submit" value="signup" onclick="document.location.href ='signup.html'">
+<div id="fixedfooter">movorockers.com</div>  
+</body>  
+</html>  

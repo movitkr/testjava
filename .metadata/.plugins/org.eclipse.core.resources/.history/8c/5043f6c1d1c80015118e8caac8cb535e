@@ -1,0 +1,20 @@
+
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class Upserv
+ */
+@WebServlet("/Upserv")
+public class Upserv extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    /**
+     * Default constructor. 
+     */
+    public Upserv() {
+        // TODO Auto-generated constructor stub
+    }
+
+}
