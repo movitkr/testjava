@@ -1,0 +1,13 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+
+</head>  
+<body bgcolor="#58ACFA"> 
+<%@ include file="header.jsp" %>
+<%@ include file="footer.jsp" %>
+<input type="submit" value="login" onclick="document.location.href ='login.html'"><br><br>
+<input type="submit" value="signup" onclick="document.location.href ='signup.html'">
+<div id="fixedfooter">movorockers.com</div>  
+</body>  
+</html>  

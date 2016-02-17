@@ -1,0 +1,62 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+ 
+public class papstmt {
+	
+	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	   static final String DB_URL = "jdbc:mysql://localhost/mov";
+
+	   //  Database credentials
+	   static final String USER = "root";
+	   static final String PASS = "root";
+ 
+    public static void main(String a[]){
+         
+        Connection conn = null;
+        PreparedStatement prSt = null;
+        try {
+           
+        	Class.forName("com.mysql.jdbc.Driver");
+
+            //STEP 3: Open a connection
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(DB_URL,USER, PASS);
+            
+            System.out.println("Connected database successfully...");
+            
+            //STEP 4: Execute a query
+            //System.out.println("Creating table in given database...");
+            String query = "insert into emp(name,dept,salary) values(?,?,?)";
+            
+            prSt = conn.prepareStatement(query);
+            prSt.setString(1, "John");
+            prSt.setString(2, "sales");
+            prSt.setInt(3, 10000);
+            //count will give you how many records got updated
+            int count = prSt.executeUpdate();
+            System.out.println(count);
+            //Run the same query with different values
+            prSt.setString(1, "jonny");
+            prSt.setString(2, "cric");
+            prSt.setInt(3, 5000);
+            count = prSt.executeUpdate();
+            System.out.println(count);
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally{
+            try{
+                if(prSt != null) prSt.close();
+                if(conn != null) conn.close();
+            } catch(Exception ex){}
+        }
+    }
+}
+

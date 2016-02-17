@@ -1,0 +1,84 @@
+{ 
+  "fathers" : [ 
+    { 
+      "id" : 0,
+      "married" : false,
+      "name" : "Scott Anderson",
+      "sons" : null,
+      "daughters" : [ 
+        { 
+          "age" : 25,
+          "name" : "Brenda"
+          }
+        ]
+      },
+    { 
+      "id" : 1,
+      "married" : true,
+      "name" : "Michael Jones",
+      "sons" : null,
+      "daughters" : [ 
+        { 
+          "age" : 31,
+          "name" : "Dorothy"
+          }
+        ]
+      },
+    { 
+      "id" : 2,
+      "married" : false,
+      "name" : "Paul Jones",
+      "sons" : null,
+      "daughters" : [ 
+        { 
+          "age" : 11,
+          "name" : "Sandra"
+          },
+        { 
+          "age" : 30,
+          "name" : "Karen"
+          }
+        ]
+      },
+    { 
+      "id" : 3,
+      "married" : true,
+      "name" : "Larry White",
+      "sons" : null,
+      "daughters" : [
+        ]
+      },
+    { 
+      "id" : 4,
+      "married" : true,
+      "name" : "Richard Thomas",
+      "sons" : null,
+      "daughters" : [ 
+        { 
+          "age" : 13,
+          "name" : "Melissa"
+          },
+        { 
+          "age" : 21,
+          "name" : "Betty"
+          },
+        { 
+          "age" : 18,
+          "name" : "Lisa"
+          }
+        ]
+      },
+    { 
+      "id" : 5,
+      "married" : true,
+      "name" : "Christopher Williams",
+      "sons" : null,
+      "daughters" : [ 
+        { 
+          "age" : 15,
+          "name" : "Linda"
+          }
+        ]
+      }
+    ]
+  }

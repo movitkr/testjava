@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>welcome bros!!!</title>
+</head>
+<body>
+<form action="welcome" method= "post">
+name: <input type="text" name="name"><br>
+<input type="submit" value="press">
+
+</form>
+</body>
+</html>

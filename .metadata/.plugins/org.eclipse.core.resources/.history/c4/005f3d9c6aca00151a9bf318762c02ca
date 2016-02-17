@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="a.css">
+</head>
+
+<nav>
+  <ul>
+    <li>
+       <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Profile</a>
+    </li>
+    <li>
+      <a href="#">changes</a>
+    </li>
+    <li>
+      <a href="#">Bio</a>
+    </li>
+    <li>
+      <a href="#">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+</html>

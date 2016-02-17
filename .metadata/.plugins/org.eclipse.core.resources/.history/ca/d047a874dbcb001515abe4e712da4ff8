@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="a.css">
+</head>
+<body>
+<nav>
+  <ul>
+    <li>
+       <a href="home.html" target="_parent">Home</a>
+    </li>
+    <li>
+      <a href="#">Print Design</a>
+    </li>
+    <li>
+      <a href="#">Web Design</a>
+    </li>
+    <li>
+      <a href="#">Bio</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>
